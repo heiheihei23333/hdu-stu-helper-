@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杭电每日健康打卡</title>
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="images/x-icon" />
+    <!-- 引入base.css文件 -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- 引入daka.css文件 -->
+    <link rel="stylesheet" href="css/daka.css" />
+    <script src="js/daka.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left"><span>历史记录</span></div>
+        <div class="navbar-center">每日健康打卡</div>
+        <div class="navbar-right"><span><a href="login.html">登录</a></span></div>
+    </div>
+    <div>
+        <div class="notice">
+            <span class="notice-ico"><svg t="1628349364215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="20062" width="24" height="24"><path d="M512.1 242c36.5 0 71.8 7.1 105.1 21.2 32.1 13.6 61 33.1 85.8 57.9s44.3 53.7 57.9 85.8c14.1 33.3 21.2 68.6 21.2 105.1s-7.1 71.8-21.2 105.1c-13.6 32.1-33.1 61-57.9 85.8-24.8 24.8-53.7 44.3-85.8 57.9-33.3 14.1-68.6 21.2-105.1 21.2s-71.8-7.1-105.1-21.2c-32.1-13.6-61-33.1-85.8-57.9-24.8-24.8-44.3-53.7-57.9-85.8-14.1-33.3-21.2-68.6-21.2-105.1s7.1-71.8 21.2-105.1c13.6-32.1 33.1-61 57.9-85.8s53.7-44.3 85.8-57.9c33.3-14.1 68.6-21.2 105.1-21.2m0-30c-165.7 0-300 134.3-300 300s134.3 300 300 300 300-134.3 300-300-134.3-300-300-300z" fill="#1989FA" p-id="20063"></path><path d="M512.1 697.4c-8.3 0-15-6.7-15-15v-51c0-8.3 6.7-15 15-15s15 6.7 15 15v51c0 8.3-6.7 15-15 15zM512.1 586.6c-8.3 0-15-6.7-15-15v-230c0-8.3 6.7-15 15-15s15 6.7 15 15v230c0 8.3-6.7 15-15 15z" fill="#1989FA" p-id="20064"></path></svg></span>
+            <span>&nbsp*
+            号为必填项，请每天按时提交打卡信息</span>
+        </div>
+        <div class="isdaka">
+            <span><img src="img/cuo.png" alt="" id="isdaka-img"></span>
+            <h2 id="isdaka-content">&nbsp未打卡</h2>
+        </div>
+        <div class="basemessage">基本信息</div>
+        <div class="message">
+            <div class="personMessage">
+                <div class="message-title">
+                    <span>姓名</span></div>
+                <div class="message-value">
+                    <span>庞宇</span></div>
+            </div>
+            <div class="personMessage">
+                <div class="message-title"><span>学号</span></div>
+                <div class="message-value"><span>191040074</span></div>
+            </div>
+            <div class="personMessage">
+                <div class="message-title"><span>健康码地区</span></div>
+                <div class="message-value"><span>杭州市</span></div>
+            </div>
+            <div class="personMessage">
+                <div class="message-title"><span>健康码</span></div>
+                <div class="message-value"><span>绿码</span></div>
+            </div>
+        </div>
+        <div class="dakaMessage">
+            <section>
+                <h2>每日打卡</h2>
+                <div class="father">
+                    <div class="son">
+                        <marquee name=news behavior=scroll direction=left scrollamount=5 scrolldelay=1 hspace=-100 vspace=0 align=left>
+                            ！ 我承诺严格遵守学校防疫期间规定，认真履行每日一报，数据真实可信。
+                        </marquee>
+                    </div>
+
+                </div>
+            </section>
+            <div>
+                <div class="current-city">
+                    <div class="message-title">
+                        <span>当前所在城市</span>
+                        <span>&nbsp</span>
+                        <span class="tag-waring">定位不准？</span>
+                    </div>
+                    <div class="message-value">浙江省 杭州市</div>
+                </div>
+            </div>
+            <div class="allmessage">
+                <div required="required">
+                    <div class="allmessage-large">
+                        <div class="allmessage-large-content"><span>1. 近14天您的健康状况是？</span>
+                        </div>
+                    </div>
+                    <div class="allmessage-group group1">
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">健康良好</div>
+                            <div class="allmessage-group-content-img checked"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">新型冠状肺炎确诊</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">新型冠状肺炎疑似病例</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div required="required">
+                    <div class="allmessage-large">
+                        <div class="allmessage-large-content">2. 您近14天的生活状况是？</div>
+                    </div>
+                    <div class="allmessage-group group2">
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">正常在家</div>
+                            <div class="allmessage-group-content-img checked"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">正常在校（未经学校审批，不得提前返校）</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">政府集中隔离（指被属地管理部门要求至指定地点集中隔离并进行医学观察的）</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">居家医学观察（收到社区等相关部门明确要求的）</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">其它（实习，找工作，在国外等）</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div required="required">
+                    <div class="allmessage-large">
+                        <div class="allmessage-large-content">3. 近14天您的晨检体温如何？</div>
+                    </div>
+                    <div class="allmessage-group group3">
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">37度以下</div>
+                            <div class="allmessage-group-content-img checked"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">37-37.3</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">37.3以上</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">其他疑似症状</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div required="required">
+                    <div class="allmessage-large">
+                        <div class="allmessage-large-content">4. 近14天您申领的杭州健康码是？（请到“支付宝-城市服务-选择当前城市为杭州-健康码”中领取）</div>
+                    </div>
+                    <div class="allmessage-group group4">
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">绿码</div>
+                            <div class="allmessage-group-content-img checked"><img src="img/yes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">黄码</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">橙码</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">红码</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">未申领</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div required="required">
+                    <div class="allmessage-large">
+                        <div class="allmessage-large-content">5. 近14天您是否密切接触过确诊病例或疑似病例？（有此类情况需第一时间报告年级辅导员）</div>
+                    </div>
+                    <div class="allmessage-group group5">
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">否</div>
+                            <div class="allmessage-group-content-img checked"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">是</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div required="required">
+                    <div class="allmessage-large">
+                        <div class="allmessage-large-content">6. 近14天您是否经由中高风险地区（动态更新，具体查阅国务院客户端微信小程序）或政府集中隔离点返浙？（有此类情况需第一时间报告学院年级辅导员）</div>
+                    </div>
+                    <div class="allmessage-group group6">
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">否</div>
+                            <div class="allmessage-group-content-img checked"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">是，已做核酸检测，可生成通行码</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">是，未做核酸检测</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div required="required">
+                    <div class="allmessage-large">
+                        <div class="allmessage-large-content">7. 近14天您的共同居住人员是否有以下这些情况之一：集中隔离（收治）或居家观察；杭州健康码红码，橙码或黄码； 14天内从境外返回（除澳门地区）;出现其他有关疫情的异常情况。（有此类情况需第一时间报告学院年级辅导员）
+                        </div>
+                    </div>
+                    <div class="allmessage-group group7">
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">否</div>
+                            <div class="allmessage-group-content-img checked"><img src="img/yes.png" alt=""></div>
+                        </div>
+                        <div class="allmessage-group-content">
+                            <div class="allmessage-group-content-left">是</div>
+                            <div class="allmessage-group-content-img"><img src="img/yes.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="warning-bottom">
+            <span>!&nbsp&nbsp</span>
+            <div> 如遇发热等情况，请第一时间拨打学校24小时应急电话 86915110 </div>
+        </div>
+        <div class="button1"><button type="button" class="daka" id="daka"><img src="img/zan.png" alt="">
+            <span>&nbsp立即打卡</span>
+            </button></div>
+        <div class="hairline">
+            <div class="copyright">
+                <p> ©️ 2021 杭电助手 All Rights Reserved. <a href="#">加入我们</a></p>
+                <p> 如有问题请填写 <a href="#">问题收集表</a>，并加入 <a href="#">杭电助手答疑群 <br> 551292799</a>咨询</p>
+            </div>
+        </div>
+        <div class="notice-show" style="visibility: hidden;">
+            <div id="bgc">
+                <div class="bgc-message">
+                    <div class="title">确认打卡</div>
+                    <p>请对您填写的信息负责，如有不实则自行承担相应后果！</p>
+                </div>
+                <div class="select">
+                    <button type="button" class="quit">取消</button>
+                    <button type="button" class="confirm">确认</button>
+                </div>
+            </div>
+        </div>
+        <div class="notdakanotice">
+            今日未打卡，请前往打卡
+        </div>
+        <div class="dakasuccess" style="visibility: hidden;">
+            <img src="img/good.png" alt="">
+            <span>&nbsp打卡成功!</span>
+
+        </div>
+    </div>
+
+    <script>
+        // var d1 = document.getElementById("son ");
+        // d1.innerHTML += d1.innerHTML;
+        // setInterval(function() {
+        //     // document.title = d1.scrollLeft;
+        //     d1.scrollLeft++;
+        //     console.log(d1.scrollLeft);
+        //     if (d1.scrollLeft >= d1.scrollWidth / 2) {
+        //         d1.scrollLeft = 0;
+        //     }
+        // }, 2000);
+    </script>
+</body>
+
+</html>

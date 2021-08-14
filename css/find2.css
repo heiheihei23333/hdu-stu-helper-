@@ -1,0 +1,553 @@
+:root {
+    --hola-primary-color: #3498db;
+    --orange: #ffc107;
+    --lvse: #17a2b8;
+    --inschool: #f49b0b;
+    --green: rgb(61, 230, 83);
+    --fonta: #1e87f0;
+}
+
+
+/*让所有斜体 不倾斜*/
+
+em,
+i {
+    font-style: normal;
+}
+
+
+/* 上面为针对所有标签的属性（base.css）------------------------------- */
+
+.content-title {
+    display: block;
+    width: 92%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 9px 5px 20px 0px;
+    margin: 0 auto;
+}
+
+article .nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    /* justify-content: space-between; */
+}
+
+article .nav ul li {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+}
+
+article .nav ul li i {
+    text-align: center;
+}
+
+article .nav ul li span {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--hola-primary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.spana a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul :nth-child(n+6) {
+    margin: 16px 0 0 0;
+}
+
+
+/* 学习 */
+
+article .content-weather .nav ul :nth-child(2) span,
+article .content-weather .nav ul :nth-child(3) span,
+article .content-weather .nav ul :nth-child(4) span,
+article .content-weather .nav ul :nth-child(5) span,
+article .content-weather .nav ul :nth-child(6) span,
+article .content-weather .nav ul :nth-child(7) span,
+article .content-weather .nav ul :nth-child(10) span {
+    background-color: var(--lvse);
+}
+
+article .content-weather .nav ul :nth-child(8) span,
+article .content-weather .nav ul :nth-child(9) span {
+    background-color: rgb(255, 136, 0);
+}
+
+article .nav ul :nth-child(11) span,
+article .nav ul :nth-child(12) span,
+article .newstudent ul li span {
+    background-color: #fff;
+}
+
+article .nav ul li span img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* 学工 */
+
+.feedback .nav ul :nth-child(6) span {
+    background-color: var(--green);
+}
+
+
+/* 毕业服务 */
+
+.quittitle .nav ul :nth-child(-n+2) span {
+    background-color: var(--lvse);
+}
+
+.quittitle .nav ul :nth-child(3) span {
+    background-color: blue;
+}
+
+.quittitle .nav ul :nth-child(4) span {
+    background-color: #fff;
+}
+
+
+/*此处开始为旧css代码 ----------------------------------- */
+
+@media screen and (max-width:767px) {
+    .container-content {
+        width: 100%;
+    }
+}
+
+html {
+    font-size: 16px!important;
+    background-color: #f2f2f5;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+/* .container-fluid {
+    padding: 0;
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* header a:hover {
+    color: #fff;
+} */
+
+.row {
+    display: flex;
+    height: 721px;
+}
+
+@media screen and (min-width:767px) {
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #3498db;
+        width: 162px;
+        height: 100%;
+        /* height: 200px; */
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .content-weather,
+    .grade,
+    .classlist,
+    .newstudent,
+    .emptyroom {
+        margin-bottom: 10px!important;
+    }
+    .content>div {
+        margin-bottom: 10px;
+    }
+    .seccolumn {
+        margin-left: 0!important;
+        /* margin-bottom: 100px!important; */
+    }
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 0.85rem!important;
+    }
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    header .nav {
+        background-color: #fff;
+        padding: 5px 0 0 0!important;
+    }
+    header ul {
+        display: flex;
+        width: 100%;
+    }
+    header ul li {
+        flex: 1;
+    }
+    header ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #fff!important; */
+    }
+    header ul li a span {
+        /* text-align: center; */
+        padding-left: 0!important;
+    }
+    article {
+        width: 100vw;
+        background-color: #f2f2f5;
+    }
+    a {
+        color: #333;
+    }
+    header svg {
+        fill: #333;
+    }
+    header ul :nth-child(2) a {
+        color: #3498db;
+    }
+    header ul :nth-child(2) a svg {
+        fill: #3498db;
+    }
+    .cweather {
+        height: 230px!important;
+    }
+    .container-content {
+        /* position: relative;
+        top: -70px!important;
+        left: 0; */
+        height: calc(100vh - 240px);
+    }
+    .seccolumn {
+        padding-bottom: 55px!important;
+    }
+}
+
+header .title {
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+    /* border-bottom: 1px solid #6badda; */
+}
+
+header .nav {
+    padding: 0 6px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 0.85rem!important;
+    }
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    header a:hover {
+        text-decoration: none;
+        color: #333;
+    }
+    header .nav {
+        background-color: #fff;
+        padding: 5px 0 0 0!important;
+    }
+}
+
+header ul li {
+    border-radius: 5px;
+}
+
+header ul :nth-child(2) a {
+    background-color: #ffffff33;
+}
+
+header ul li a {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 48px;
+    padding: 0 14px;
+}
+
+header ul li a span {
+    padding-left: 13px;
+}
+
+
+/* 小屏幕下nav里的li浮动 */
+
+
+/* @media screen and (max-width:767px) {
+    .nav li {
+        float: left;
+        width: 33.33%;
+    }
+} */
+
+@media screen and (min-width:767px) {
+    article {
+        position: relative;
+        margin-left: 162px;
+        width: calc(100vw - 162px);
+        height: 100%;
+        padding: 0!important;
+        background-color: #f2f2f5;
+    }
+}
+
+.cweather {
+    width: 100%;
+    height: 184px;
+    background-color: #3498db;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fffffff7;
+    padding-top: 90px;
+}
+
+.cweatherimg {
+    /* position: relative;
+    top: 0; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.cweatherimg img {
+    /* max-width: 765px; */
+    width: 100%;
+}
+
+.cweather-content {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.container-content {
+    /* position: relative;
+    top: 10px;
+    left: 0; */
+    /* width: 80%; */
+    height: calc(100vh - 240px);
+}
+
+.content {
+    width: 94%;
+    height: calc(100vh - 240px);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.largebox {
+    background-color: #fff;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px;
+    /* width: 100%;
+    height: 100%; */
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+}
+
+
+/* 设置 */
+
+
+/* .classlisttitle,
+.feedbacktitle,
+.abouttitle,
+.quittitle {
+    display: flex;
+} */
+
+.spacer {
+    flex: 1;
+}
+
+.classlisttitle span,
+.feedbacktitle span,
+.abouttitle span,
+.quittitle span {
+    display: flex;
+    align-items: center;
+}
+
+.icon-left {
+    margin-right: 12px;
+}
+
+
+/* 反馈 */
+
+.feedback {
+    padding: 0;
+}
+
+
+/* 考试成绩 */
+
+.grade .largebox .gradetitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fircolumn,
+.seccolumn {
+    padding: 0;
+}
+
+.content-weather,
+.grade,
+.classlist,
+.emptyroom {
+    margin-bottom: 20px;
+}
+
+.content-weather,
+.classlist,
+.grade,
+.emptyroom,
+.container-content,
+.newstudent {
+    padding: 0;
+}
+
+
+/* 今日课表 （和别的格式一样放在一起了）*/
+
+.seccolumn {
+    margin-left: 20px;
+}
+
+
+/* 空教室 */
+
+.room-num {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f5;
+}
+
+
+/* .room-num .left {
+    position: relative;
+    left: 0;
+} */
+
+.room-num .right {
+    float: right;
+}
+
+.lastroom-num {
+    border: none;
+    padding-bottom: 0;
+}
+
+.tabbar {
+    /* width: 100vh; */
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: var(--hola-primary-color);
+    color: #fff;
+    /* padding: 0 8px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.tabbar a {
+    color: #fff;
+}
+
+.tabbar .tabbar-left {
+    float: left;
+    margin-left: 18px;
+}
+
+.tabbar .tabbar-right {
+    float: right;
+    margin-right: 18px;
+}
+
+
+/* 公告 */
+
+.tongzhi {
+    display: flex;
+    /* height: 40px; */
+    padding: 12px 18px;
+    align-items: center;
+}
+
+.tongzhi span {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.tongzhi .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: var(--orange);
+}
+
+.tongzhi .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,170 @@
+.background {
+    position: fixed;
+    background: center url(../img/login_01.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.header {
+    width: 100%;
+    background: center 10px url(../img/schoollogo.png) no-repeat;
+    height: 77px;
+    background-size: auto 54px;
+    margin-top: 10px;
+}
+
+.container {
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 10px 0 10px;
+    padding: 25px 20px;
+    border-radius: 8px;
+}
+
+.container-title {
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #fff;
+}
+
+.form-top {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.form-top button:hover {
+    background-color: rgb(29, 180, 240);
+    color: #fff;
+}
+
+.numberinput,
+.passwordinput {
+    background-image: url(../img/login-user.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 15px;
+    background-size: 19px 19px;
+    font-size: 14px;
+    width: 100%;
+    height: 42px;
+}
+
+.passwordinput {
+    background-image: url(../img/password.png);
+    margin-top: 25px;
+}
+
+.numberinput input,
+.passwordinput input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 45px;
+    border-radius: 14px;
+    background: none;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+.remember {
+    margin-top: 10px;
+    font-size: 14px;
+    /* text-align: right; */
+}
+
+.autologin {
+    float: left;
+}
+
+.password {
+    float: right;
+}
+
+.password a {
+    color: var(--fonta);
+}
+
+button {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 14px;
+    margin-top: 10px;
+}
+
+.phone {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.warning {
+    margin-top: 2px;
+}
+
+.footer {
+    margin-top: 120px;
+}
+
+@media screen and (min-width:1023px) {
+    .container {
+        float: right;
+        margin-right: 180px;
+        margin-top: 80px;
+        width: 340px;
+    }
+    .footer {
+        position: fixed;
+        bottom: 40px;
+        width: 100%;
+    }
+    .footer {
+        margin: 0 auto;
+    }
+    .header {
+        visibility: hidden!important;
+    }
+    .headerCopy {
+        position: absolute;
+        top: 0;
+        /* padding-left: 180px; */
+        font-size: 28px;
+        color: #fff;
+        width: 100%;
+        /* background: url(../img/logo-pc.png) no-repeat 0 0; */
+        height: 148px;
+    }
+    .headerCopy img {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .footer {
+        position: fixed;
+        bottom: 40px;
+        width: 100%;
+    }
+    .footer {
+        margin: 0 auto;
+    }
+    .headerCopy {
+        display: none;
+    }
+}

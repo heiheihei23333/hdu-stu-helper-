@@ -1,0 +1,336 @@
+@media screen and (max-width:767px) {
+    .container-content {
+        width: 100%;
+    }
+}
+
+html {
+    font-size: 16px!important;
+    background-color: #f2f2f5;
+}
+
+body {
+    font-size: 16px;
+}
+
+.largebox svg {
+    fill: #3498db;
+}
+
+
+/* .container-fluid {
+    padding: 0;
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* header a:hover {
+    color: #fff;
+} */
+
+.row {
+    display: flex;
+    height: 721px;
+}
+
+@media screen and (min-width:767px) {
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #3498db;
+        width: 162px;
+        height: 100%;
+        /* height: 200px; */
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .content-weather,
+    .grade,
+    .classlist {
+        margin-bottom: 10px!important;
+    }
+    .content>div {
+        margin-bottom: 10px;
+    }
+    .seccolumn {
+        margin-left: 0!important;
+    }
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 0.85rem!important;
+    }
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    header a:hover {
+        text-decoration: none;
+        color: #333;
+    }
+    header .nav {
+        background-color: #fff;
+        padding: 5px 0 0 0!important;
+    }
+    header ul {
+        display: flex;
+        width: 100%;
+    }
+    header ul li {
+        flex: 1;
+    }
+    header ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #fff!important; */
+    }
+    header ul li a span {
+        /* text-align: center; */
+        padding-left: 0!important;
+    }
+    article {
+        width: 100vw;
+        background-color: #f2f2f5;
+    }
+    a {
+        color: #333;
+    }
+    header svg {
+        fill: #333;
+    }
+    header ul :nth-child(3) a {
+        color: #3498db;
+    }
+    header ul :nth-child(3) a svg {
+        fill: #3498db;
+    }
+    .cweather {
+        height: 230px!important;
+    }
+    .container-content {
+        position: relative;
+        top: -70px!important;
+        left: 0;
+        /* width: 80%; */
+        height: calc(100vh - 240px);
+    }
+}
+
+header .title {
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+    /* border-bottom: 1px solid #6badda; */
+}
+
+header .nav {
+    padding: 0 6px;
+}
+
+header ul li {
+    border-radius: 5px;
+}
+
+header ul :nth-child(3) a {
+    background-color: #ffffff33;
+}
+
+header ul li a {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 48px;
+    padding: 0 14px;
+}
+
+header ul li a span {
+    padding-left: 13px;
+}
+
+
+/* 小屏幕下nav里的li浮动 */
+
+
+/* @media screen and (max-width:767px) {
+    .nav li {
+        float: left;
+        width: 33.33%;
+    }
+} */
+
+@media screen and (min-width:767px) {
+    article {
+        position: relative;
+        margin-left: 162px;
+        width: calc(100vw - 162px);
+        height: 100%;
+        padding: 0!important;
+        background-color: #f2f2f5;
+    }
+}
+
+.cweather {
+    width: 100%;
+    height: 184px;
+    background-color: #3498db;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fffffff7;
+    padding-top: 90px;
+}
+
+.cweather-content {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.container-content {
+    position: relative;
+    top: -30px;
+    left: 0;
+    /* width: 80%; */
+    height: calc(100vh - 240px);
+}
+
+.content {
+    width: 94%;
+    height: calc(100vh - 240px);
+    margin: 0 auto;
+}
+
+.largebox {
+    background-color: #fff;
+    padding: 25px 25px 25px 25px;
+    border-radius: 5px;
+    /* width: 100%;
+    height: 100%; */
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+}
+
+.content-weather .title-line h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* 设置 */
+
+.classlisttitle,
+.feedbacktitle,
+.abouttitle,
+.quittitle {
+    display: flex;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.classlisttitle span,
+.feedbacktitle span,
+.abouttitle span,
+.quittitle span {
+    display: flex;
+    align-items: center;
+}
+
+.icon-left {
+    margin-right: 12px;
+}
+
+
+/* 反馈 */
+
+.feedback {
+    padding: 0;
+}
+
+
+/* 考试成绩 */
+
+.grade .largebox .gradetitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fircolumn,
+.seccolumn {
+    padding: 0;
+}
+
+.content-weather,
+.grade,
+.classlist {
+    margin-bottom: 20px;
+}
+
+.content-weather,
+.classlist,
+.grade,
+.emptyroom,
+.container-content {
+    padding: 0;
+}
+
+
+/* 今日课表 （和别的格式一样放在一起了）*/
+
+.seccolumn {
+    margin-left: 20px;
+}
+
+
+/* 空教室 */
+
+.room-num {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f5;
+}
+
+
+/* .room-num .left {
+    position: relative;
+    left: 0;
+} */
+
+.room-num .right {
+    float: right;
+}
+
+.lastroom-num {
+    border: none;
+    padding-bottom: 0;
+}

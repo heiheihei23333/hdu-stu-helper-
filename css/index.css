@@ -1,0 +1,422 @@
+@media screen and (max-width:767px) {
+    .container-content {
+        width: 100%;
+    }
+}
+
+html {
+    font-size: 16px!important;
+    background-color: #f2f2f5;
+}
+
+
+/* .container-fluid {
+    padding: 0;
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    height: 721px;
+}
+
+@media screen and (min-width:767px) {
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #3498db;
+        width: 162px;
+        height: 100%;
+        /* height: 200px; */
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .content-weather,
+    .grade {
+        margin-bottom: 10px!important;
+    }
+    .content>div {
+        margin-bottom: 10px;
+    }
+    .seccolumn {
+        margin-left: 0!important;
+    }
+    /* header a:hover {
+        color: #333;
+    } */
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 0.85rem!important;
+    }
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    header a:hover {
+        text-decoration: none;
+        color: #333;
+    }
+    header .nav {
+        background-color: #fff;
+        padding: 5px 0 0 0!important;
+    }
+    header ul {
+        display: flex;
+        width: 100%;
+    }
+    header ul li {
+        flex: 1;
+    }
+    header ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #fff!important; */
+    }
+    header ul li a span {
+        /* text-align: center; */
+        padding-left: 0!important;
+    }
+    article {
+        width: 100vw;
+        background-color: #f2f2f5;
+    }
+    a {
+        color: #333;
+    }
+    header svg {
+        fill: #333;
+    }
+    header ul :first-child a {
+        color: #3498db;
+    }
+    header ul :first-child a svg {
+        fill: #3498db;
+    }
+    .weather {
+        padding: 0 28px 0 28px!important;
+    }
+    .cweather {
+        height: 230px!important;
+        margin-top: 48px;
+    }
+    .container-content {
+        position: relative;
+        top: -40px!important;
+        left: 0;
+        /* width: 80%; */
+        height: calc(100vh - 240px);
+    }
+}
+
+header .title {
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+    /* border-bottom: 1px solid #6badda; */
+}
+
+header .nav {
+    padding: 0 6px;
+}
+
+header ul li {
+    border-radius: 5px;
+}
+
+header ul :first-child a {
+    background-color: #ffffff33;
+}
+
+header ul li a {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 48px;
+    padding: 0 14px;
+}
+
+header ul li a span {
+    padding-left: 13px;
+}
+
+
+/* 小屏幕下nav里的li浮动 */
+
+
+/* @media screen and (max-width:767px) {
+    .nav li {
+        float: left;
+        width: 33.33%;
+    }
+} */
+
+@media screen and (min-width:767px) {
+    article {
+        position: relative;
+        margin-left: 162px;
+        width: calc(100vw - 162px);
+        height: 100%;
+        padding: 0!important;
+        background-color: #f2f2f5;
+    }
+}
+
+.cweather {
+    width: 100%;
+    height: 360px;
+    background-color: #3498db;
+    color: #fffffff7;
+    padding-top: 50px;
+}
+
+.weather {
+    display: flex;
+    /* width: 80%; */
+    height: 50%;
+    margin: 0px auto;
+    padding: 0 100px 0 100px;
+}
+
+.data-wrapper {
+    flex: 65%;
+}
+
+.weekday {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.weekday span {
+    font-size: 1.625rem;
+}
+
+.tagline,
+.weather-wrapper div {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.weather-wrapper {
+    flex: 35%;
+    align-items: center;
+    text-align: right;
+    /* padding-top: 2px; */
+}
+
+.container-content {
+    position: relative;
+    top: -120px;
+    left: 0;
+    /* width: 80%; */
+    height: calc(100vh - 240px);
+}
+
+.weather-wrapper img {
+    height: 56px;
+    margin-bottom: 12px;
+    margin-right: 16px;
+}
+
+.content {
+    width: 94%;
+    height: calc(100vh - 240px);
+    margin: 0 auto;
+}
+
+
+/* .content>div {
+    padding: 0 15px 0 15px;
+} */
+
+
+/* .content-weather {
+    background-color: #fff;
+} */
+
+.largebox {
+    background-color: #fff;
+    padding: 25px 25px 25px 25px;
+    border-radius: 5px;
+    /* width: 100%;
+    height: 100%; */
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+}
+
+.content-weather .title-line {
+    display: flex;
+    align-items: center;
+    /* height: 50px; */
+}
+
+.content-weather .title-line .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #f4511e;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.content-weather .title-line .right {
+    color: #d84315;
+}
+
+.content-weather .title-line .right h4 {
+    font-weight: bold;
+}
+
+.temperature {
+    display: flex;
+    padding-top: 25px;
+}
+
+.temperature .left {
+    margin-right: 20px;
+}
+
+.temperature .left,
+.temperature .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature div .num {
+    font-size: 39px;
+    color: #e05d35;
+    font-weight: 700;
+}
+
+
+/* 考试成绩 */
+
+.grade .largebox .gradetitle,
+.classlisttitle,
+.emptyroomtitle {
+    display: flex;
+    align-items: center;
+    color: #6f42c1;
+    margin-bottom: 15px;
+}
+
+.grade .largebox .gradetitle div,
+.classlisttitle div,
+.emptyroomtitle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.classlist .largebox p {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.grade .largebox p {
+    color: #6f42c1;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.fixtitle {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3498db;
+    color: #fff;
+    height: 48px;
+    font-size: 19.2px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 25px;
+}
+
+.fircolumn,
+.seccolumn {
+    padding: 0;
+}
+
+.content-weather,
+.grade {
+    margin-bottom: 20px;
+}
+
+.content-weather,
+.classlist,
+.grade,
+.emptyroom,
+.container-content {
+    padding: 0;
+}
+
+
+/* 今日课表 （和别的格式一样放在一起了）*/
+
+.seccolumn {
+    margin-left: 20px;
+}
+
+
+/* 空教室 */
+
+.room-num {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f5;
+}
+
+
+/* .room-num .left {
+    position: relative;
+    left: 0;
+} */
+
+.room-num .right {
+    float: right;
+}
+
+.lastroom-num {
+    border: none;
+    padding-bottom: 0;
+}
+
+a:hover {
+    all: none;
+}

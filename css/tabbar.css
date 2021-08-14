@@ -1,0 +1,222 @@
+.tabbar {
+    /* width: 100vh; */
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: var(--hola-primary-color);
+    color: #fff;
+    /* padding: 0 8px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.tabbar a {
+    color: #fff;
+}
+
+.tabbar .tabbar-left {
+    float: left;
+    margin-left: 18px;
+}
+
+.tabbar .tabbar-right {
+    float: right;
+    margin-right: 18px;
+}
+
+.w {
+    padding: 0 10px 5px 10px;
+    position: relative;
+    top: 50px;
+}
+
+.header {
+    /* height: 181.16px; */
+    margin: 10px 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header img {
+    width: 100%;
+}
+
+.tongzhi {
+    display: flex;
+    /* height: 40px; */
+    padding: 12px 18px;
+    align-items: center;
+}
+
+.tongzhi span {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.tongzhi .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: var(--orange);
+}
+
+.tongzhi .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content,
+.study,
+.studywork,
+.graduate {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.title {
+    padding: 0 18px;
+}
+
+.title :first-child {
+    height: 40px;
+    line-height: 40px;
+}
+
+
+/* .content .nav {
+    width: 100%;
+} */
+
+.nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    /* justify-content: space-between; */
+}
+
+.nav ul li {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+}
+
+.nav ul li i {
+    text-align: center;
+}
+
+.nav ul li span {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--hola-primary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.spana a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul :nth-child(n+6) {
+    margin: 16px 0 0 0;
+}
+
+.content .nav ul :nth-child(2) span,
+.content .nav ul :nth-child(3) span,
+.content .nav ul :nth-child(4) span,
+.content .nav ul :nth-child(5) span,
+.content .nav ul :nth-child(6) span,
+.content .nav ul :nth-child(7) span,
+.content .nav ul :nth-child(10) span {
+    background-color: var(--lvse);
+}
+
+.content .nav ul :nth-child(8) span,
+.content .nav ul :nth-child(9) span {
+    background-color: rgb(255, 136, 0);
+}
+
+.content .nav ul :nth-child(11) span,
+.content .nav ul :nth-child(12) span {
+    background-color: #fff;
+}
+
+.content .nav ul li span img {
+    width: 24px;
+    height: 24px;
+}
+
+.studywork .nav ul :nth-child(6) span {
+    background-color: var(--green);
+}
+
+.graduate {
+    margin-bottom: 50px;
+}
+
+.graduate .nav ul :nth-child(-n+2) span {
+    background-color: var(--lvse);
+}
+
+.graduate .nav ul :nth-child(3) span {
+    background-color: blue;
+}
+
+.graduate .nav ul :nth-child(4) span {
+    background-color: #fff;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.footer ul {
+    display: flex;
+    width: 100%;
+}
+
+.footer ul li {
+    flex: 1;
+}
+
+.footer ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .footer ul li a:hover {
+    color: #333;
+} */
+
+.footer svg {
+    fill: #333;
+}
+
+.footer ul :nth-child(2) a {
+    color: #3498db;
+}
+
+.footer ul :nth-child(2) a svg {
+    fill: #3498db;
+}
